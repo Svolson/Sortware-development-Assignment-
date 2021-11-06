@@ -29,6 +29,10 @@ copy_list = ['Firstname', ' Surname' , 'Average' , "Grade"]
 dffinal= df[copy_list].copy()
 
 dffinal.loc[10] = ["Seth" , "Volson" , 90, "A" ] 
-print(dffinal)
 
-dffinal.to_csv(r'C:\Users\Jamie\Desktop\New Folder\output.csv', index=False)
+dffinal.to_csv('output.csv') 
+files.download('output.csv')
+
+
+
+
