@@ -27,6 +27,8 @@ df['Grade'] = pd.cut(df['Average'], bins=[0, 39.9, 49.9 , 59.9 , 69.9 , 79.9, 10
 
 copy_list = ['Firstname', ' Surname' , 'Average' , "Grade"]
 dffinal= df[copy_list].copy()
+
+dffinal.loc[10] = ["Seth" , "Volson" , 90, "A" ] 
 print(dffinal)
 
 dffinal.to_csv(r'C:\Users\Jamie\Desktop\New Folder\output.csv', index=False)
